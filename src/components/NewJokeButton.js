@@ -30,26 +30,5 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderColor: '#c8c8c8',
         width: 300
-    },
-    all: {
-        flexWrap: 'wrap',
-        alignItems: 'flex-start',
-        flexDirection: 'row',
-    },
-    socialMediaContainer: {
-        flex: 1,
-        justifyContent: 'center',
-        position: 'relative',
-        textAlign: 'center',
-        backgroundColor: '#c8c8c8'
-    },
-    socialMedia: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: '#fff',
-        borderWidth: 2,
-        borderColor: '#c8c8c8',
-        width: 65,
-        height: 65
-    },
+    }
 });
