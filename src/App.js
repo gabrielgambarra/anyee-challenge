@@ -7,52 +7,30 @@
  */
 
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, SafeAreaView, ScrollView } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
-import Routes from './routes';
+import Main from './pages/Main.js';
 
 
 export default function App() {
     return (
-        <Routes />
+        <SafeAreaView style={styles.container}>
+            <Main />
+        </SafeAreaView>
     );
 }
 
 const styles = StyleSheet.create({
-    scrollView: {
-        backgroundColor: Colors.lighter,
-    },
-    engine: {
+    container: {
+        flex: 1,
+        alignItems: 'center',
         position: 'absolute',
-        right: 0,
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0
     },
-    body: {
-        backgroundColor: Colors.white,
-    },
-    sectionContainer: {
-        marginTop: 32,
-        paddingHorizontal: 24,
-    },
-    sectionTitle: {
-        fontSize: 24,
-        fontWeight: '600',
-        color: Colors.black,
-    },
-    sectionDescription: {
-        marginTop: 8,
-        fontSize: 18,
-        fontWeight: '400',
-        color: Colors.dark,
-    },
-    highlight: {
-        fontWeight: '700',
-    },
-    footer: {
-        color: Colors.dark,
-        fontSize: 12,
-        fontWeight: '600',
-        padding: 4,
-        paddingRight: 12,
-        textAlign: 'right',
-    },
+    scrollView: {
+        alignSelf: 'stretch'
+    }
 });
